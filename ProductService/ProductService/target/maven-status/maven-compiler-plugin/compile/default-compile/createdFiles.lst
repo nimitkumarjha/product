@@ -1,0 +1,13 @@
+com\OMS\ProductService\dto\productDTO.class
+com\OMS\ProductService\entity\subscribedproduct.class
+com\OMS\ProductService\dto\subscribedproductDTO.class
+com\OMS\ProductService\model\Cart.class
+com\OMS\ProductService\service\productService.class
+com\OMS\ProductService\entity\product.class
+com\OMS\ProductService\dto\StockDTO.class
+com\OMS\ProductService\repository\productRepository.class
+com\OMS\ProductService\repository\subscribedproductRespository.class
+com\OMS\ProductService\controller\subscribedproductController.class
+com\OMS\ProductService\service\subscribedService.class
+com\OMS\ProductService\controller\ProductController.class
+com\OMS\ProductService\ProductServiceApplication.class
