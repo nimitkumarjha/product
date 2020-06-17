@@ -3,8 +3,8 @@ version: 0.2
 env:
   secrets-manager:
     LOGIN: sonarcredentials926:sonartoken
-    HOST: sonarcredentials926:host
-    Organization: sonarcredentials926:organization
+    HOST:sonarcredentials926:host
+    Organization:sonarcredentials926:organization
     Project: sonarcredentials926:projectKey
 
 phases:
@@ -39,10 +39,10 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the docker images
-      - eval $(aws ecr get-login --no-include-email | sed 's|https://||')
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
-      - printf '[{"name":"orderContainer","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - docker push 127906472701.dkr.ecr.ap-south-1.amazonaws.com/fa4repo:latest
+      - printf '[{"name":"productcontainer","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 artifacts:
     files: imagedefinitions.json
