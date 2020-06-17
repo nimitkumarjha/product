@@ -3,7 +3,7 @@ version: 0.2
 env:
   secrets-manager:
     LOGIN: sonarcredentials926:sonartoken
-    HOST:sonarcredentials926:host
+    HOST: sonarcredentials926:host
     Organization:sonarcredentials926:organization
     Project: sonarcredentials926:projectKey
 
